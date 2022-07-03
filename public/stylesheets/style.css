@@ -1,0 +1,75 @@
+body{
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: lightblue;
+    height: 100vh;
+}
+
+footer{
+    text-align: center;
+    background-color: #e3f2fd;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin: auto;
+}
+
+.navbar{
+    background-color: #e3f2fd;
+}
+
+.container{
+    height: 87vh;
+}
+
+.container.homepage, .container.error {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#signin{
+    margin-top: 10em;
+}
+
+#signin h3{
+    text-align: center;
+    color: white;
+}
+
+#signup{
+    margin-top: 10em;
+}
+
+#signup h3{
+    text-align: center;
+    color: white;
+}
+
+#title-homepage, #title-error, #title-journey h2{
+    color: white;
+    font-weight: bold;
+}
+
+.table-ticket thead, tbody {
+    background-color: whitesmoke;
+}
+
+.table-ticket tfoot {
+    background-color: lightcoral;
+}
+
+.table-ticket tfoot tr td, .table-ticket tfoot tr th {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.btn-signup{
+    margin-bottom: 5px;
+    margin-left: -10px;
+}
