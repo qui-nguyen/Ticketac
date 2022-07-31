@@ -16,6 +16,13 @@ Installer les modules définis dans `package.json` par `node package manager (np
 npm install
 ```
 
+Créer le fichier des variables d'environnement `.env` à la racine du projet et renseigner dans ce fichier vos informations de connexion de votre base de données
+
+- `DB_LOGIN`
+- `DB_PWD`
+- `DB_HOSTNAME`
+- `DB_NAME`
+
 Démarrer le projet en local
 
 ```node

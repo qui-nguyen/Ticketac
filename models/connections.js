@@ -1,5 +1,8 @@
+require('dotenv').config();
+
 var mongoose = require('mongoose');
 
+const {DB_LOGIN, DB_PWD, DB_HOSTNAME, DB_NAME} = process.env;
 // useNewUrlParser ;)
 var options = {
     connectTimeoutMS: 5000,
@@ -7,8 +10,8 @@ var options = {
     useUnifiedTopology: true
    };
   
-  // --------------------- BDD -----------------------------------------------------
-  mongoose.connect('mongodb+srv://ThanhQui:zayyo8XP4c2NE2Ro@miam.crg9gau.mongodb.net/ticketac?retryWrites=true&w=majority',
+  // --------------------------------- BDD --------------------------------------
+  mongoose.connect(`mongodb+srv://${DB_LOGIN}:${DB_PWD}@${DB_HOSTNAME}/${DB_NAME}?retryWrites=true&w=majority`,
      options,
      function(err) {
       if (err) {
